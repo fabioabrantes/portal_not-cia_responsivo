@@ -1,0 +1,102 @@
+/* ===============================
+   RESPONSIVO - TABLET & MOBILE
+   =============================== */
+
+/* A partir de 1024px para baixo */
+@media (max-width: 1024px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "featured"
+      "weekly"
+      "ai"
+      "aside";
+    gap: 40px;
+  }
+
+  aside {
+    /* Garante que o aside não tenha margem superior desnecessária */
+    #more {
+      margin-top: 0;
+    }
+  }
+}
+
+/* A partir de 800px para baixo */
+@media (max-width: 800px) {
+  .container {
+    padding-inline: 24px;
+  }
+
+  #featured {
+    grid-auto-flow: row;
+  }
+
+  #featured .grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #weekly > div {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  #ai .grid.gap-32 {
+    gap: 24px;
+  }
+
+  #more .grid.gap-32 {
+    gap: 24px;
+  }
+}
+
+/* A partir de 600px para baixo (Mobile) */
+@media (max-width: 600px) {
+  header nav#primary {
+    justify-content: space-between;
+  }
+
+  header nav#primary div:nth-child(2) {
+    /* Remove a margem automática para centralizar o logo */
+    margin-inline: 0;
+  }
+
+  header nav#primary strong {
+    /* Esconde o texto "Menu" e "Buscar" no mobile */
+    display: none;
+  }
+
+  header nav#secondary {
+    /* Esconde a barra de rolagem visualmente */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  header nav#secondary::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  #featured .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  #weekly > div {
+    grid-template-columns: 1fr;
+  }
+
+  #ai article,
+  #more article {
+    grid-auto-flow: row;
+  }
+
+  #ai article img,
+  #more article img {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #ai article div:last-child,
+  #more article div:last-child {
+    order: -1; /* Move a imagem para cima do texto */
+  }
+}
