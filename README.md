@@ -8,6 +8,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## Projeto
 
 O projeto consiste em um portal de notícias com um layout moderno, construído inicialmente com foco em desktop utilizando CSS Grid.
+**[Clique aqui para ver o projeto ao vivo](https://fabioabrantes.github.io/Zingen---Karaok-/)**
 
 ### ✨ Responsividade
 
