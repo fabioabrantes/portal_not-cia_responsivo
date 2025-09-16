@@ -1,35 +1,14 @@
-<p align="center">
-  <img alt="Logo - Rocketseat" src=".github/logo.png" width="200px" />
-</p>
-
-<p align="center">
-Projeto de um Portal de notícias desenvolvido durante as aulas de Grid na Rocketseat.
-</p>
-
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
-
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=0F172A&labelColor=1D4ED8">
-</p>
-
-<br>
-
-<p align="center">
-  <img alt="Preview do projeto desenvolvido." src=".github/preview.png" width="60%">
-</p>
-
-
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
-- CSS
+- CSS (com Grid Layout e Media Queries)
 
 ## Projeto
 
-Nesse projeto iremos desenvolver um portal de notícias para praticar o nosso conhecimento com o Grid!
+O projeto consiste em um portal de notícias com um layout moderno, construído inicialmente com foco em desktop utilizando CSS Grid.
+
+### ✨ Responsividade
+
+Posteriormente, o projeto foi refatorado para ser totalmente responsivo, adaptando-se a diferentes tamanhos de tela, como tablets e celulares. A abordagem utilizada foi a **Desktop First**, onde o layout padrão é o de desktop e `media queries` (`@media (max-width: ...)`) são usadas para ajustar o layout para telas menores.

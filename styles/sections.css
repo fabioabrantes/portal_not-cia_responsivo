@@ -71,6 +71,8 @@ section header {
 
   img {
     height: 160px;
+    width: 100%;
+    object-fit: cover;
   }
 
   figure {
@@ -84,7 +86,7 @@ section header {
 
     p {
       margin-top: 8px;
-      font-weight: 800;
+      font: 800 16px/140% var(--font-family);
     }
   }
 }
@@ -107,6 +109,10 @@ aside {
   grid-area: aside;
 }
 
+#ads img {
+  width: 100%;
+}
+
 #more {
   margin-top: 32px;
 
@@ -118,5 +124,11 @@ aside {
     width: 72px;
     aspect-ratio: 1/1;
     object-fit: cover;
+  }
+}
+@media (max-width: 600px) {
+  #ai article img,
+  #more article img {
+    width: 80px;
   }
 }

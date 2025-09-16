@@ -1,6 +1,8 @@
 #primary {
   padding-block: 26px;
 
+  justify-content: space-between;
+
   div {
     display: flex;
     align-items: center;
@@ -16,6 +18,7 @@
 
   div:nth-child(3) {
     justify-self: end;
+    /* justify-self: end; */ /* Esta linha não é mais necessária */
   }
 }
 

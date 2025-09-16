@@ -83,20 +83,4 @@
   #weekly > div {
     grid-template-columns: 1fr;
   }
-
-  #ai article,
-  #more article {
-    grid-auto-flow: row;
-  }
-
-  #ai article img,
-  #more article img {
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  #ai article div:last-child,
-  #more article div:last-child {
-    order: -1; /* Move a imagem para cima do texto */
-  }
 }
